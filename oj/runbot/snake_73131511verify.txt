@@ -1,0 +1,113 @@
+#include <iostream>
+#include <vector>
+#define x first
+#define y second
+using namespace std;
+typedef pair<int, int> pii;
+const int N = 20;
+const int dx[]{ -1, 0, 1, 0 };
+const int dy[]{ 0, 1, 0, -1 };
+int ax, ay, bx, by, rows = 13, cols = 14, direction = 0;
+int g[N][N];
+vector<pii> snake[2];
+
+/**
+ * tips:
+ * dx[] dy[] 分别代表x, y方向上的偏移量
+ * (ax, ay) 你的蛇的起点坐标
+ * (bx, by) 对手蛇的起点坐标
+ * snake是一个坐标数组, 每一个元素都是一个坐标, 代表蛇身体的位置
+ * snake[0] : 代表你的蛇:
+ * snake[1] : 代表对手的蛇
+ * g[N][N] : 代表地图, 是一个13 * 14的二维数组; 例如 g[5][5] == 1 说明这个位置有墙或者是蛇的身体
+ * 
+ * ACM模式下, 输入样例, 输出一个整数即代表你的代码正常执行
+ * 样例输入：
+ * 11111111111111110000000000011000001000100110000010000001101100100000011000000010001110001000010001110001000000011000000100110110000001000001100100010000011000000000001111111111111111#1#12#()#11#1#()
+ * 
+ * 样例输出：
+ * n
+ */
+
+// 此方法作用: 返回一个数值, 这个数值代表下一步蛇前进的方向 (0 1 2 3 对应 上 右 下 左)
+int nextMove() {
+    int direction = 0;
+    // 由你来编写
+    return direction;
+}
+
+// 检测当前回合蛇是否变长
+bool check_tail_increasing(int steps) { 
+    if (steps <= 10) {
+        return true;
+    }
+    return steps % 3 == 1;
+}
+
+// 获得蛇的身体
+vector<pii> getCells(int sx, int sy, string steps) {
+    steps = steps.substr(1, steps.length() - 2);
+    vector<pii> res;
+    int x = sx, y = sy;
+    int step = 0;
+    res.push_back({x, y});
+    for (int i = 0; i < steps.size(); i++) {
+        int d = steps[i] - '0';
+        x += dx[d];
+        y += dy[d];
+        res.push_back({x, y});
+        if (!check_tail_increasing(++step)) {
+            res.erase(res.begin());
+        }
+    }
+    return res;
+}
+
+// 处理输入
+void before()
+{
+    string str, split = "#";
+    vector<string> s;
+    cin >> str;
+    if (str == "") return;
+    string strs = str + split;
+    size_t pos = strs.find(split);
+ 
+    while (pos != strs.npos)
+    {
+        string temp = strs.substr(0, pos);
+        s.push_back(temp);
+        strs = strs.substr(pos + 1, strs.size());
+        pos = strs.find(split);
+    }
+    
+    for (int i = 0, k = 0; i < rows; i++) {
+        for (int j = 0; j < cols; j++, k++) {
+            if (s[0][k] == '1') {
+                g[i][j] = 1;
+            }
+        }
+    }
+
+    ax = stoi(s[1],0,10);
+    ay = stoi(s[2],0,10);
+    bx = stoi(s[4],0,10);
+    by = stoi(s[5],0,10);
+    
+    snake[0] = getCells(ax, ay, s[3]);
+    snake[1] = getCells(bx, by, s[6]);
+
+    for (pii c : snake[0]) {
+        g[c.x][c.y] = 1;
+    }
+    for (pii c : snake[1]) {
+        g[c.x][c.y] = 1;
+    }
+}
+
+int main() {
+    before();
+    direction = nextMove();
+    cout << direction;
+    return 0;
+}

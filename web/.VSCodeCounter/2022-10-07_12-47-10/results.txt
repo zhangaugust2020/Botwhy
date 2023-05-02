@@ -1,0 +1,86 @@
+Date : 2022-10-07 12:47:10
+Directory : d:\AcWing\spring\web\src
+Total : 42 files,  5563 codes, 36 comments, 307 blanks, all 5906 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| Vue.js     |         27 |      4,465 |         22 |        216 |      4,703 |
+| JavaScript |         15 |      1,098 |         14 |         91 |      1,203 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++---------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                          | files      | code       | comment    | blank      | total      |
++---------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                             |         42 |      5,563 |         36 |        307 |      5,906 |
+| assets                                                        |          7 |        593 |         14 |         75 |        682 |
+| assets\scripts                                                |          7 |        593 |         14 |         75 |        682 |
+| assets\scripts\reversi                                        |          2 |        251 |          3 |         24 |        278 |
+| assets\scripts\snake                                          |          4 |        303 |         11 |         44 |        358 |
+| components                                                    |         12 |      2,226 |          8 |        104 |      2,338 |
+| components\navbar                                             |          2 |        193 |          0 |          9 |        202 |
+| components\user                                               |          2 |        258 |          0 |         10 |        268 |
+| router                                                        |          1 |        171 |          0 |          8 |        179 |
+| store                                                         |          6 |        329 |          0 |          6 |        335 |
+| views                                                         |         14 |      2,210 |         14 |        108 |      2,332 |
+| views\dynamic                                                 |          1 |        102 |          0 |          7 |        109 |
+| views\error                                                   |          1 |         14 |          0 |          2 |         16 |
+| views\index                                                   |          1 |        142 |          1 |          4 |        147 |
+| views\pk                                                      |          3 |        464 |         13 |         32 |        509 |
+| views\ranklist                                                |          1 |        170 |          0 |          7 |        177 |
+| views\record                                                  |          2 |        299 |          0 |         15 |        314 |
+| views\user                                                    |          5 |      1,019 |          0 |         41 |      1,060 |
+| views\user\bot                                                |          1 |        518 |          0 |         16 |        534 |
+| views\user\myspace                                            |          2 |        345 |          0 |         15 |        360 |
++---------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++---------------------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                                      | language   | code       | comment    | blank      | total      |
++---------------------------------------------------------------+------------+------------+------------+------------+------------+
+| d:\AcWing\spring\web\src\App.vue                              | Vue.js     |         29 |          0 |          4 |         33 |
+| d:\AcWing\spring\web\src\assets\scripts\AcGameObject.js       | JavaScript |         39 |          0 |          7 |         46 |
+| d:\AcWing\spring\web\src\assets\scripts\reversi\GameMap.js    | JavaScript |        198 |          3 |         16 |        217 |
+| d:\AcWing\spring\web\src\assets\scripts\reversi\Reversi.js    | JavaScript |         53 |          0 |          8 |         61 |
+| d:\AcWing\spring\web\src\assets\scripts\snake\Cell.js         | JavaScript |          8 |          0 |          1 |          9 |
+| d:\AcWing\spring\web\src\assets\scripts\snake\GameMap.js      | JavaScript |        158 |          4 |         15 |        177 |
+| d:\AcWing\spring\web\src\assets\scripts\snake\Snake.js        | JavaScript |        117 |          7 |         22 |        146 |
+| d:\AcWing\spring\web\src\assets\scripts\snake\Wall.js         | JavaScript |         20 |          0 |          6 |         26 |
+| d:\AcWing\spring\web\src\components\ChatGround.vue            | Vue.js     |        451 |          1 |         16 |        468 |
+| d:\AcWing\spring\web\src\components\ContentField.vue          | Vue.js     |         16 |          0 |          2 |         18 |
+| d:\AcWing\spring\web\src\components\LoginRegister.vue         | Vue.js     |        504 |          7 |         26 |        537 |
+| d:\AcWing\spring\web\src\components\MatchGround.vue           | Vue.js     |        203 |          0 |          7 |        210 |
+| d:\AcWing\spring\web\src\components\PlayGround.vue            | Vue.js     |         33 |          0 |          4 |         37 |
+| d:\AcWing\spring\web\src\components\ResultBoard.vue           | Vue.js     |        120 |          0 |          9 |        129 |
+| d:\AcWing\spring\web\src\components\ReversiGameMap.vue        | Vue.js     |        238 |          0 |         13 |        251 |
+| d:\AcWing\spring\web\src\components\SnakeGameMap.vue          | Vue.js     |        210 |          0 |          8 |        218 |
+| d:\AcWing\spring\web\src\components\navbar\MyspaceNavBar.vue  | Vue.js     |         37 |          0 |          4 |         41 |
+| d:\AcWing\spring\web\src\components\navbar\NarBar.vue         | Vue.js     |        156 |          0 |          5 |        161 |
+| d:\AcWing\spring\web\src\components\user\UserProfilePosts.vue | Vue.js     |        131 |          0 |          3 |        134 |
+| d:\AcWing\spring\web\src\components\user\UserProfileWrite.vue | Vue.js     |        127 |          0 |          7 |        134 |
+| d:\AcWing\spring\web\src\main.js                              | JavaScript |          5 |          0 |          2 |          7 |
+| d:\AcWing\spring\web\src\router\index.js                      | JavaScript |        171 |          0 |          8 |        179 |
+| d:\AcWing\spring\web\src\store\index.js                       | JavaScript |         24 |          0 |          1 |         25 |
+| d:\AcWing\spring\web\src\store\pk.js                          | JavaScript |         14 |          0 |          1 |         15 |
+| d:\AcWing\spring\web\src\store\record.js                      | JavaScript |         46 |          0 |          1 |         47 |
+| d:\AcWing\spring\web\src\store\reversi.js                     | JavaScript |         63 |          0 |          1 |         64 |
+| d:\AcWing\spring\web\src\store\snake.js                       | JavaScript |         65 |          0 |          1 |         66 |
+| d:\AcWing\spring\web\src\store\user.js                        | JavaScript |        117 |          0 |          1 |        118 |
+| d:\AcWing\spring\web\src\views\dynamic\DynamicsView.vue       | Vue.js     |        102 |          0 |          7 |        109 |
+| d:\AcWing\spring\web\src\views\error\NotFound.vue             | Vue.js     |         14 |          0 |          2 |         16 |
+| d:\AcWing\spring\web\src\views\index\IndexView.vue            | Vue.js     |        142 |          1 |          4 |        147 |
+| d:\AcWing\spring\web\src\views\pk\PkIndexView.vue             | Vue.js     |        127 |         12 |          2 |        141 |
+| d:\AcWing\spring\web\src\views\pk\ReversiView.vue             | Vue.js     |        172 |          1 |         16 |        189 |
+| d:\AcWing\spring\web\src\views\pk\SnakeView.vue               | Vue.js     |        165 |          0 |         14 |        179 |
+| d:\AcWing\spring\web\src\views\ranklist\RanklistIndexView.vue | Vue.js     |        170 |          0 |          7 |        177 |
+| d:\AcWing\spring\web\src\views\record\RecordContentView.vue   | Vue.js     |         32 |          0 |          2 |         34 |
+| d:\AcWing\spring\web\src\views\record\RecordIndexView.vue     | Vue.js     |        267 |          0 |         13 |        280 |
+| d:\AcWing\spring\web\src\views\user\DisplayView.vue           | Vue.js     |        138 |          0 |          8 |        146 |
+| d:\AcWing\spring\web\src\views\user\LoginView.vue             | Vue.js     |         18 |          0 |          2 |         20 |
+| d:\AcWing\spring\web\src\views\user\bot\UserBotIndexView.vue  | Vue.js     |        518 |          0 |         16 |        534 |
+| d:\AcWing\spring\web\src\views\user\myspace\MyspaceView.vue   | Vue.js     |        288 |          0 |         12 |        300 |
+| d:\AcWing\spring\web\src\views\user\myspace\PostView.vue      | Vue.js     |         57 |          0 |          3 |         60 |
+| Total                                                         |            |      5,563 |         36 |        307 |      5,906 |
++---------------------------------------------------------------+------------+------------+------------+------------+------------+
